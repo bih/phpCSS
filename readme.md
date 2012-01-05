@@ -26,7 +26,7 @@ While there are examples available in the `/examples` folder, I've displayed a c
 
 Once you have successfully installed phpCSS.php on a PHP5 server (LAMP recommended) you need to insert this code:
 
-    include "./src/phpCSS.php";
+    include "./php/phpCSS.php";
     $phpcss = new phpCSS('http://www.domain.com/style.css');
     print_r($phpcss->decode());
 
@@ -34,7 +34,7 @@ Once you have successfully installed phpCSS.php on a PHP5 server (LAMP recommend
 
 The code above will decode a CSS file from **http://www.domain.com/style.css** - though you can insert CSS in the same field as demonstrated below:
 
-    include "./src/phpCSS.php";
+    include "./php/phpCSS.php";
     $phpcss = new phpCSS(
     	'body {
     		border:			1px;
@@ -47,7 +47,7 @@ The code above will decode a CSS file from **http://www.domain.com/style.css** -
 
 For more advanced users, you can set custom rules, such as disabling advanced decoding (see inline documentation to find out more) or to disable output nested organising. So far, **disable_advanced_decoding** disables the advanced decoding. And **disable_organise** which disables the nested organising.
 
-    include "./src/phpCSS.php";
+    include "./php/phpCSS.php";
     $phpcss = new phpCSS(
     	'body {
     		border:			1px;
