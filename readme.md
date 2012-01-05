@@ -25,12 +25,14 @@ Example usage
 While there are examples available in the `/examples` folder, I've displayed a couple below.
 
 Once you have successfully installed phpCSS.php on a PHP5 server (LAMP recommended) you need to insert this code:
+
     include "./src/phpCSS.php";
     $phpcss = new phpCSS('http://www.domain.com/style.css');
     print_r($phpcss->decode());
 
 
 The code above will decode a CSS file from **http://www.domain.com/style.css** - though you can insert CSS in the same field as demonstrated below:
+
     include "./src/phpCSS.php";
     $phpcss = new phpCSS(
     	'body {
