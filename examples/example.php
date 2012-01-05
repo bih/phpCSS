@@ -1,7 +1,7 @@
 <?php
 /*
 	phpCSS {
-		@note: This script uses the phpCSS library to decode a CSS file. See how it works.q
+		@note: This script uses the phpCSS library to decode a CSS file. See how it works.
 	}
 */
 
