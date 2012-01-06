@@ -681,6 +681,4 @@ class phpCSS
 
 }
 
-
-$e = new phpCSS();
 /* --  End of file: phpCSS.php -- */
