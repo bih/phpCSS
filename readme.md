@@ -5,7 +5,7 @@ phpCSS - Open source PHP5 library for CSS
 
 Author
 ---------------------
-The library was created by Bilawal Hameed, a 18 year old entrepreneur and programmer from Manchester. I decided to release this library for free because it would foster a whole new community. I've used plenty of libraries in the past that are open source, and you could say this is the first step for me giving back to the community.
+The library was created by Bilawal Hameed, an 18 year old entrepreneur and programmer from Manchester. I decided to release this library for free because it would foster a whole new community. I've used plenty of libraries in the past that are open source, and you could say this is the first step for me giving back to the community.
 
 It is currently under __active development__ by myself. I hope other developers can contribute and help me release even better things in the future. You can see my thoughts on phpCSS on a regular basis over at [my website](http://www.bilawal.co.uk/).
 
