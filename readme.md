@@ -5,9 +5,9 @@ phpCSS - Open source PHP5 library for CSS
 
 Author
 ---------------------
-The library was created by Bilawal Hameed, an 18 year old entrepreneur and programmer from Manchester. I decided to release this library for free because it would foster a whole new community. I've used plenty of libraries in the past that are open source, and you could say this is the first step for me giving back to the community.
+The library was created by Bilawal Hameed, a 19 year old entrepreneur and programmer from Manchester. I decided to release this library for free because it would foster a whole new community. I've used plenty of libraries in the past that are open source, and you could say this is the first step for me giving back to the community.
 
-It is currently under __active development__ by myself. I hope other developers can contribute and help me release even better things in the future. You can see my thoughts on phpCSS on a regular basis over at [my website](http://www.bilawal.co.uk/).
+It is __not__ currently being maintained, and it is not stable as of writing this (Mar 2013). I hope other developers can contribute and help me release even better things in the future. You can see my thoughts on phpCSS on a regular basis over at [my website](http://bilaw.al/).
 
 Purpose
 ---------------------
@@ -26,35 +26,39 @@ While there are examples available in the `/examples` folder, I've displayed a c
 
 Once you have successfully installed phpCSS.php on a PHP5 server (LAMP recommended) you need to insert this code:
 
-    include "./php/phpCSS.php";
-    $phpcss = new phpCSS('http://www.domain.com/style.css');
-    print_r($phpcss->decode());
-
+```php
+include "./php/phpCSS.php";
+$phpcss = new phpCSS('http://www.domain.com/style.css');
+print_r($phpcss->decode());
+```
 
 
 The code above will decode a CSS file from **http://www.domain.com/style.css** - though you can insert CSS in the same field as demonstrated below:
 
-    include "./php/phpCSS.php";
-    $phpcss = new phpCSS(
-    	'body {
-    		border:			1px;
-    		margin:			0px;
-    		background:	4px;
-    	}'
-    );
-    print_r($phpcss->decode());
-
+```php
+include "./php/phpCSS.php";
+$phpcss = new phpCSS(
+	'body {
+		border:			1px;
+		margin:			0px;
+		background:	4px;
+	}'
+);
+print_r($phpcss->decode());
+```
 
 For more advanced users, you can set custom rules, such as disabling advanced decoding (see inline documentation to find out more) or to disable output nested organising. So far, **disable_advanced_decoding** disables the advanced decoding. And **disable_organise** which disables the nested organising.
 
-    include "./php/phpCSS.php";
-    $phpcss = new phpCSS(
-    	'body {
-    		border:			1px;
-    		margin:			0px;
-    		background:	4px;
-    	}'
-    );
-    $phpcss->set_rule('disable_advanced_decoding');
-    
-	print_r($phpcss->decode());
+```php
+include "./php/phpCSS.php";
+$phpcss = new phpCSS(
+	'body {
+		border:			1px;
+		margin:			0px;
+		background:	4px;
+	}'
+);
+$phpcss->set_rule('disable_advanced_decoding');
+
+print_r($phpcss->decode());
+```
